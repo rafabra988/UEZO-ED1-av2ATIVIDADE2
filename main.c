@@ -25,7 +25,7 @@ int main()
 //    imprimir();
 /*________________________________________exe2____________________________________*/
 
-    int valor1,valor2, resp, valor;
+    int valor1,valor2, resp, v;
 
     FilaVazia();
 
@@ -34,25 +34,15 @@ int main()
 
     for(int i=0;i<resp;i++){
         printf("qual o valor do %dº elemento?",i+1);
-        scanf("%d",&valor);
-        inserir(valor);
+        scanf("%d",&v);
+        inserir(v);
     }
-    while(valor1>resp){
+
         printf("gostária de pular quantos valores?\n");
         scanf("%d",&valor1);
-        if(valor1>resp){
-            printf("o valor deve ser menor q %d\n", resp+1);
-        }
 
-    }
-    while(valor2>resp){
-        printf("gostária de pular quantos valores?");
-        scanf("%d",&valor1);
-        if(valor2>resp){
-            printf("o valor deve ser menor q %d\n", resp+1);
-        }
-    }
-
+        printf("gostária de apagar quantos valores?");
+        scanf("%d",&valor2);
 
 
     pulareapagar(valor1,valor2);

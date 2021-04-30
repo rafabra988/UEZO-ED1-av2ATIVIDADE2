@@ -123,16 +123,27 @@ void pulareapagar(int m, int n){
     aux= ini_ponto->prox;
     segundaux=ini_ponto;
     while(aux!=NULL){
+        printf(" <%d \n",aux->info);
         for(int i=0;i<m;i++){
-            segundaux=aux;
-            aux=aux->prox;
-            system("pause");
-        }
-        for(int i=0;i<n;i++){
-            segundaux->prox=aux->prox;
-            free(aux);
-            aux=segundaux->prox;
-        }
+            printf(" <%d ",aux->info);
+            if(aux->prox==NULL){
+                break;
+            }else{
+                segundaux=aux;
+                aux=aux->prox;
+            }
 
+        }
+//        for(int i=0;i<n;i++){
+//            if(aux->prox==NULL){
+//                break;
+//            }else{
+//                segundaux->prox=aux->prox;
+//                free(aux);
+//                aux=segundaux->prox;
+//            }
+ //       }
+imprimir();
+system("pause");
     }
 }

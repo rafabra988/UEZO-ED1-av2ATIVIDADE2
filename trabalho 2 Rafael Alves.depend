@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1619730471 source:c:\users\roxan\documents\ca\trabalho 2 rafael alves\main.c
+1619818818 source:c:\users\roxan\documents\ca\trabalho 2 rafael alves\main.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
 	"funcoesed1t2.h"
 
-1619729859 source:c:\users\roxan\documents\ca\trabalho 2 rafael alves\funcoesed1t2.c
+1619822124 source:c:\users\roxan\documents\ca\trabalho 2 rafael alves\funcoesed1t2.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
