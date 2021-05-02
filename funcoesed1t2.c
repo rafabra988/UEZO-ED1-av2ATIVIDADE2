@@ -143,19 +143,17 @@ void pulareapagar(int m, int n){
 //__________________________________________ex3___________________________________________
 
 void movinit(){
-    Elemento *segundaux;
-    Elemento *aux;
-    Elemento *tercaux;
+    Elemento *segundaux, *aux,*tercaux, *quartaux;
     aux= ini_ponto->prox;
     segundaux=ini_ponto;
-    tercaux=ini_ponto->prox;
-    tercaux=tercaux->prox;
+    quartaux=ini_ponto->prox;
     while(aux!=NULL){
+        tercaux=segundaux;
         segundaux=aux;
         aux=aux->prox;
     }
-    int p=ini_ponto->prox;
-    ini_ponto->prox=aux;
-    ini_ponto->prox=p;
-    free(aux);
+    tercaux->prox=NULL;
+    ini_ponto->prox=segundaux;
+    segundaux->prox=quartaux;
+    aux=ini_ponto->prox;
 }
