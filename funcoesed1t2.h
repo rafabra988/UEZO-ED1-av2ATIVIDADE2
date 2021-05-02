@@ -9,6 +9,7 @@ void remover(int x);
 void ordenar();
 void removdup();
 void pulareapagar(int m, int n);
+void movinit();
 
 
 #endif // FUNCOESED1T2_H_INCLUDED

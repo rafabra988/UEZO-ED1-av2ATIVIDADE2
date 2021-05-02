@@ -123,27 +123,39 @@ void pulareapagar(int m, int n){
     aux= ini_ponto->prox;
     segundaux=ini_ponto;
     while(aux!=NULL){
-        printf(" <%d \n",aux->info);
         for(int i=0;i<m;i++){
-            printf(" <%d ",aux->info);
-            if(aux->prox==NULL){
-                break;
-            }else{
+            if(aux!=NULL){
                 segundaux=aux;
                 aux=aux->prox;
             }
+        }
+        for(int i=0;i<n;i++){
+            if(aux!=NULL){
+                segundaux->prox=aux->prox;
+                free(aux);
+                aux=segundaux->prox;
+            }
 
         }
-//        for(int i=0;i<n;i++){
-//            if(aux->prox==NULL){
-//                break;
-//            }else{
-//                segundaux->prox=aux->prox;
-//                free(aux);
-//                aux=segundaux->prox;
-//            }
- //       }
-imprimir();
-system("pause");
     }
+}
+
+//__________________________________________ex3___________________________________________
+
+void movinit(){
+    Elemento *segundaux;
+    Elemento *aux;
+    Elemento *tercaux;
+    aux= ini_ponto->prox;
+    segundaux=ini_ponto;
+    tercaux=ini_ponto->prox;
+    tercaux=tercaux->prox;
+    while(aux!=NULL){
+        segundaux=aux;
+        aux=aux->prox;
+    }
+    int p=ini_ponto->prox;
+    ini_ponto->prox=aux;
+    ini_ponto->prox=p;
+    free(aux);
 }

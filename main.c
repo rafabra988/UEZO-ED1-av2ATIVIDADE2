@@ -25,7 +25,32 @@ int main()
 //    imprimir();
 /*________________________________________exe2____________________________________*/
 
-    int valor1,valor2, resp, v;
+//    int valor1,valor2, resp, v;
+//
+//    FilaVazia();
+//
+//    printf("quanta posições tera na lista?");
+//    scanf("%d",&resp);
+//
+//    for(int i=0;i<resp;i++){
+//        printf("qual o valor do %dº elemento?",i+1);
+//        scanf("%d",&v);
+//        inserir(v);
+//    }
+//
+//        printf("gostária de pular quantos valores?\n");
+//        scanf("%d",&valor1);
+//
+//        printf("gostária de apagar quantos valores?");
+//        scanf("%d",&valor2);
+//
+//
+//    pulareapagar(valor1,valor2);
+//
+//    imprimir();
+/*________________________________________exe3____________________________________*/
+
+    int resp, v;
 
     FilaVazia();
 
@@ -38,15 +63,7 @@ int main()
         inserir(v);
     }
 
-        printf("gostária de pular quantos valores?\n");
-        scanf("%d",&valor1);
-
-        printf("gostária de apagar quantos valores?");
-        scanf("%d",&valor2);
-
-
-    pulareapagar(valor1,valor2);
-
+    movinit();
     imprimir();
 
     return 0;
